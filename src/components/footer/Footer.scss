@@ -1,0 +1,9 @@
+@import '../../global/GlobalColors.scss';
+
+.footer {
+  border-top: 1px solid $tertiary;
+  border-bottom: 1px solid $tertiary;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+}

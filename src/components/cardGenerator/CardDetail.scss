@@ -1,0 +1,129 @@
+@import '../../global/GlobalColors.scss';
+
+$border: 1px solid $tertiary;
+
+.cardDetailContainer {
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .cardDetail {
+    width: 1000px;
+    border-radius: 5px;
+    height: 90vh;
+    background: white;
+    border: $border;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media only screen and (max-width: 1200px) {
+      max-width: 100%;
+      height: 50hv;
+    }
+    @media only screen and (max-width: 850px) {
+      max-width: 100%;
+      height: auto;
+    }
+    .topDetail {
+      z-index: 15;
+      box-sizing: border-box;
+      min-height: 50px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .exit {
+        color: $tertiary;
+        cursor: pointer;
+      }
+    }
+    .midDetail {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: space-between;
+      overflow: hidden;
+      @media only screen and (max-width: 1200px) {
+        max-width: 100%;
+        height: auto;
+      }
+      .picDetail {
+        flex: 1;
+        max-width: 100%;
+        height: auto;
+        z-index: 9;
+      }
+      .loading {
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        .loader {
+          border: 6px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 6px solid black;
+          width: 40px;
+          height: 40px;
+          -webkit-animation: spin 2s linear infinite; /* Safari */
+          animation: spin 2s linear infinite;
+          @-webkit-keyframes spin {
+            0% {
+              -webkit-transform: rotate(0deg);
+            }
+            100% {
+              -webkit-transform: rotate(360deg);
+            }
+          }
+
+          @keyframes spin {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+    .bottomDetail {
+      box-sizing: border-box;
+      min-height: 50px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.visible {
+  display: flex;
+}
+
+.darkDetail {
+  background: rgba(255, 255, 255, 0.5) !important;
+  .cardDetail {
+    background: $tertiary;
+  }
+  .topDetail > svg {
+    fill: white;
+  }
+  .more {
+    fill: white;
+  }
+  .customizeImg {
+    background: $tertiary;
+  }
+}

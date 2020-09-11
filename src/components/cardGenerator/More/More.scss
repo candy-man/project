@@ -1,0 +1,45 @@
+@import '../../../global/GlobalColors.scss';
+
+$border: 1px solid $secondary;
+
+.wrapMore {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .more {
+    fill: $tertiary;
+    cursor: pointer;
+  }
+  .moreList {
+    display: none;
+    padding: 0;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    border: $border;
+    background: white;
+    border-radius: 5px;
+    list-style-type: none;
+    width: 50px;
+    .moreListItem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: $border;
+      &:last-of-type {
+        border-bottom: none;
+      }
+      cursor: pointer;
+      text-align: right;
+      padding: 5px;
+    }
+  }
+}
+.dark {
+  .more {
+    fill: white;
+  }
+}
+.show {
+  display: block !important;
+}

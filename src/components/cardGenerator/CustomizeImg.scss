@@ -1,0 +1,19 @@
+@import '../../global/GlobalColors.scss';
+
+$border: 1px solid $tertiary;
+
+.customizeImg {
+  box-sizing: border-box;
+  height: 125px;
+  background: white;
+  width: 1000px;
+  border-radius: 0px 0px 5px 5px;
+  border-top: $border;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  @media only screen and (max-width: 1200px) {
+    max-width: 100%;
+  }
+}

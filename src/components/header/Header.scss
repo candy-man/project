@@ -1,0 +1,109 @@
+@import '../../global/GlobalColors.scss';
+
+$headerSize: 60px;
+$padding: 5px 15px;
+$border: 1px solid $tertiary;
+
+header {
+  z-index: 999;
+  background: $lightModelWhitePure;
+  box-sizing: border-box;
+  width: 100%;
+  color: $lightModelWhitePure;
+  display: flex;
+  justify-content: space-between;
+  height: $headerSize;
+  padding: $padding;
+  border-bottom: $border;
+  border-top: $border;
+  position: relative;
+  div {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $tertiary;
+    font-weight: bold;
+  }
+  a {
+    color: $tertiary;
+    text-decoration: none;
+  }
+  .logo {
+    img {
+      width: 250px;
+    }
+  }
+  .category {
+    display: flex;
+    justify-content: space-around;
+  }
+  .toggleDarkLight {
+    justify-content: flex-end;
+    span {
+      margin-right: 5px;
+    }
+  }
+  .activePage {
+    color: #cccccc !important;
+  }
+  .more {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    svg {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .drop {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    margin: 0;
+    padding: 0;
+    li {
+      border-bottom: 1px solid black;
+      color: black;
+      background: $lightModelWhitePure;
+      &:last-of-type {
+        border-bottom: $border;
+        padding: 10px 20px;
+      }
+      a {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 20px;
+        &:hover {
+          background: $tertiary;
+          color: $lightModelWhitePure !important;
+        }
+      }
+    }
+  }
+}
+
+.show {
+  display: block;
+}
+
+.dark {
+  border-color: $lightModelWhitePure;
+  div {
+    color: $lightModelWhitePure;
+  }
+  a {
+    color: $lightModelWhitePure;
+  }
+  background: $tertiary;
+  color: $primary;
+
+  svg {
+    color: $lightModelWhitePure;
+  }
+  .drop li {
+    background-color: $tertiary;
+  }
+}

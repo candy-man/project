@@ -1,0 +1,13 @@
+@import '../../global/GlobalColors.scss';
+
+.notFound {
+  height: 100%;
+  width: 100%;
+  font-size: 120%;
+  text-align: center;
+}
+
+.dark3 {
+  color: $lightModelWhitePure;
+  background-color: $secondary;
+}

@@ -1,0 +1,17 @@
+@import '../../global/GlobalColors.scss';
+
+.heart {
+  size: 45;
+  width: 55px;
+  stroke-width: 20;
+  stroke: $tertiary;
+  fill: white;
+  &:hover {
+    fill: $primary;
+    cursor: pointer;
+  }
+}
+
+.liked {
+  fill: $primary;
+}

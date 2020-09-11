@@ -1,0 +1,77 @@
+@import '../../global/GlobalColors.scss';
+
+$border: 1px solid $dark;
+
+.paginationContainer {
+  user-select: none;
+  display: flex;
+  width: 100%;
+  height: 25vh;
+  padding-bottom: 25px;
+  justify-content: center;
+  align-items: flex-end;
+  .paginationArray {
+    width: 80%;
+    text-align: center;
+    .pagination {
+      background: $lightModelWhitePure;
+      display: inline-block;
+      text-align: center;
+      border: $border;
+      border-right: none;
+      cursor: pointer;
+      a {
+        display: block;
+        text-decoration: none;
+        width: 50px;
+        color: black;
+      }
+    }
+  }
+  .paginationArrow {
+    background: $lightModelWhitePure;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border: $border;
+    border-right: none;
+    width: 50px;
+    .arrow {
+      border: $border;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+    .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    .left {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+    &:first-of-type {
+      border-radius: 20px 0 0 20px;
+    }
+    &:last-of-type {
+      border-right: $border;
+      border-radius: 0 20px 20px 0;
+    }
+  }
+  //FOR WHEN A PAG IS SELECTED
+  .selected {
+    a {
+      color: white !important;
+      background: $primary;
+    }
+  }
+}
+
+.dark {
+  background: $tertiary !important;
+
+  a {
+    color: $lightModelWhitePure !important;
+  }
+}

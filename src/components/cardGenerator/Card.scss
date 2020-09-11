@@ -1,0 +1,55 @@
+@import '../../global/GlobalColors.scss';
+
+$border: 1px solid $secondary;
+
+.cardContainer {
+  user-select: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border: $border;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  resize: none;
+  border-radius: 0.25rem;
+  @media only screen and (max-width: 360px) {
+    max-width: 100%;
+  }
+  .top {
+    padding: 10px;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .mid {
+    display: flex;
+    padding: 2px;
+    flex: 1;
+    .pic {
+      flex: 1;
+      cursor: pointer;
+      width: 300px;
+    }
+
+    height: 340px;
+  }
+  .bottom {
+    padding: 10px;
+    display: flex;
+    height: 20px;
+    align-items: center;
+  }
+}
+
+//FOR DARK MODE
+.dark {
+  .top {
+    fill: white;
+  }
+  background-color: $tertiary;
+  color: $primary;
+  border-color: $tertiary;
+  * {
+    border-color: $tertiary !important;
+  }
+}
