@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/project/static/css/main.bf572f69.chunk.css",
+    "main.js": "/project/static/js/main.57f15e45.chunk.js",
+    "main.js.map": "/project/static/js/main.57f15e45.chunk.js.map",
+    "runtime-main.js": "/project/static/js/runtime-main.c1e01555.js",
+    "runtime-main.js.map": "/project/static/js/runtime-main.c1e01555.js.map",
+    "static/css/2.14fbd4c8.chunk.css": "/project/static/css/2.14fbd4c8.chunk.css",
+    "static/js/2.065abdef.chunk.js": "/project/static/js/2.065abdef.chunk.js",
+    "static/js/2.065abdef.chunk.js.map": "/project/static/js/2.065abdef.chunk.js.map",
+    "index.html": "/project/index.html",
+    "precache-manifest.b849fe6ea9fb2a1a294a922d18184c96.js": "/project/precache-manifest.b849fe6ea9fb2a1a294a922d18184c96.js",
+    "service-worker.js": "/project/service-worker.js",
+    "static/css/2.14fbd4c8.chunk.css.map": "/project/static/css/2.14fbd4c8.chunk.css.map",
+    "static/css/main.bf572f69.chunk.css.map": "/project/static/css/main.bf572f69.chunk.css.map",
+    "static/js/2.065abdef.chunk.js.LICENSE.txt": "/project/static/js/2.065abdef.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/project/static/media/BalooTamma2-Regular.05aa77b1.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1e01555.js",
+    "static/css/2.14fbd4c8.chunk.css",
+    "static/js/2.065abdef.chunk.js",
+    "static/css/main.bf572f69.chunk.css",
+    "static/js/main.57f15e45.chunk.js"
+  ]
+}
